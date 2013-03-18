@@ -4,9 +4,14 @@ describe "Static pages" do
 
   describe "Home page" do
 
-    it "should have the content 'Pluribus Crowdfunding'" do
+    it "should have the h1 'Pluribus'" do
       visit '/static_pages/home'
-      page.should have_content('Pluribus Crowdfunding')
+      page.should have_selector('h1', :text => 'Pluribus')
+    end
+
+    it "should not have a custom page title" do
+      visit '/static_pages/home'
+      page.should_not have_selector('title', :text => '| Home')
     end
   end
 

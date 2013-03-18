@@ -8,6 +8,7 @@ gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '~> 1.1.2'
 gem 'jquery-rails', '~> 2.2.1'
 gem 'devise'
+gem 'activeadmin', '~> 0.5.1'
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.7'
