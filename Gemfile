@@ -3,11 +3,12 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'rails', '3.2.12'
+gem 'sass-rails', '~> 3.2'
 gem 'bootstrap-sass', '~> 2.3.1.0'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '~> 1.1.2'
 gem 'jquery-rails', '~> 2.2.1'
-gem 'devise'
+gem 'devise', '~> 2.2.3'
 gem 'activeadmin', '~> 0.5.1'
 
 group :development, :test do
