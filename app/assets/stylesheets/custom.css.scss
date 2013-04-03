@@ -1,13 +1,50 @@
+
+@import "bootswatch/cerulean/variables";
 @import "bootstrap";
+
+body { 
+  padding-top: 60px;
+  min-height: 300px;
+}
+
+@import "bootstrap-responsive";
+@import "bootswatch/cerulean/bootswatch";
 
 /* universal */
 
-html {
-  overflow-y: scroll;
+#titleimg-wrapper {
+  width:100%;
 }
 
-body {
-  padding-top: 60px;
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+  padding-bottom: 100px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+  background-color: #034382;
+  margin-top: -100px; /* negative value of footer height */
+  height: 100px;
+  clear:both;} 
+
+.minwidthfix {
+  max-width: 940px;
+}
+
+.mainfooter {
+  background: #008000;
+  position:relative;
+  bottom:0;
+  width:100%;
+  height:80px;   /* Height of the footer */
+  background:#6cf;
+}
+
+html {
+  overflow-y: scroll;
+  height: 100%;
 }
 
 section {
@@ -75,10 +112,12 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top: 0;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #999;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 footer a {
